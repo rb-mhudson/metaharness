@@ -58,7 +58,7 @@ Output is an npm-publishable `.zip` with **your name on it, your branding, your 
   sandbox, and keeps only what *measurably* improves. The model stays frozen; the harness
   evolves. Safe by default (no network, no API key; pure refactor/tuning behind a safety
   gate). Validated on real **SWE-bench Lite** bug-fixing. `--no-darwin` to skip.
-- **Distil the cheap tier instead of escalating to a frontier model.** **Weight-EFT**
+- **Distill the cheap tier instead of escalating to a frontier model.** **Weight-EFT**
   ([`@metaharness/weight-eft`](packages/weight-eft/), `metaharness weight-eft`) takes the
   *complementary* lever to Darwin's gradient-free evolution: it exports the harness's gold-resolved
   archive into standard SFT/DPO sets and LoRA-tunes the open cheap tier (GLM/Qwen), so the
@@ -118,8 +118,8 @@ npx metaharness --wizard
 **Already have a repo you want a harness for?**
 
 ```bash
-harness analyze-repo .                       # local — deterministic analysis only
-harness analyze-repo . --scaffold my-bot     # materialise the recommended harness
+npx metaharness analyze-repo .                       # local — deterministic analysis only
+npx metaharness analyze-repo . --scaffold my-bot     # materialise the recommended harness
 ```
 
 No repository code is executed. Inferred build/test commands are emitted as `trust: inferred · execution: disabled`.
